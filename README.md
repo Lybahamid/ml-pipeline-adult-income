@@ -91,7 +91,4 @@ F1 Score: [0.22655079412646087]
 Precision: [0.2441860465116279]
 
 
-
-The XGBoost model was selected for the API (best_model_XGBoost.joblib) due to its superior performance.
-License
 MIT License
