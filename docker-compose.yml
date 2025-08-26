@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mlflow:
+    image: my-mlflow-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - D:/ml-pipeline-adult-income/mlflow-data:/mlflow-data
+    command: mlflow ui --backend-store-uri file:///mlflow-data --host 0.0.0.0 --static-prefix /static-files  # Or sqlite:///mlflow-data/mlflow.db
+  api:
+    image: ml-pipeline
+    ports:
+      - "8000:8000"
+    volumes:
+      - D:/ml-pipeline-adult-income/artifacts:/app/artifacts
+    command: uvicorn app:app --host 0.0.0.0 --port 8000
