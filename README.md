@@ -91,9 +91,13 @@ F1 Score: [0.22655079412646087]
 Precision: [0.2441860465116279]
 
 
+<<<<<<< HEAD
 
 The RandomForestClassifier model outperformed others and is used in the API (best_model.joblib).
 
 License:
 
 MIT License
+=======
+MIT License
+>>>>>>> dc347e59b28b8dd885954a9e9d840d8884089e94
