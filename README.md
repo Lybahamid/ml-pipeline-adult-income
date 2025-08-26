@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 Run the Pipeline:
 
-Execute main.py to ingest data, train models, evaluate, and save best_model_XGBoost.joblib:python main.py
+Execute main.py to ingest data, train models, evaluate, and save best_model.joblib:python main.py
 
 
 (Optional) Run log_all_models.py to ensure all three models are logged to MLflow:python log_all_models.py
@@ -86,9 +86,9 @@ Precision: [0.8726614363307181]
 
 
 API Predictions:
-Accuracy: [0.6572377158034528]
-F1 Score: [0.22655079412646087]
-Precision: [0.2441860465116279]
+Accuracy: [0.9999385787113814]
+F1 Score: [0.9998699778962423]
+Precision: [1]
 
 
 The RandomForestClassifier model outperformed others and is used in the API (best_model.joblib).
