@@ -92,6 +92,8 @@ Precision: [0.2441860465116279]
 
 
 
-The XGBoost model was selected for the API (best_model_XGBoost.joblib) due to its superior performance.
-License
+The RandomForestClassifier model outperformed others and is used in the API (best_model.joblib).
+
+License:
+
 MIT License
